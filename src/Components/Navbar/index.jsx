@@ -32,7 +32,7 @@ function Navbar({ isSearchVisible, login, signUp, avatar }) {
   const [anchorElProduct, setAnchorElProduct] = React.useState(null);
   const { cart } = useCart();
 
-  const totalQuantity = cart.reduce((total, item) => total + item.quantity, 0); // Used to count the number of products added
+  // const totalQuantity = cart.reduce((total, item) => total + item.quantity, 0); // Used to count the number of products added
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
